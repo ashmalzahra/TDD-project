@@ -1,8 +1,8 @@
-require './solver'
+require_relative '../solver'
 
 describe Solver do
     before(:each) do
-      @solver = Solver.new
+      solver = Solver.new
     end
   
     describe '#factorial' do
