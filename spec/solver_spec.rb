@@ -22,4 +22,10 @@ describe Solver do
         expect(@solver.reverse('Hello')).to eql ('olleH')
       end
     end
+
+    describe '#fizzbuzz ' do
+      it 'sould take an integer argument N and return a string "fizz"  if N is divisible by 3' do
+        expect (@solved.fizzbuzz(3).to eql ('fizz'))
+      end
+    end
   end
