@@ -35,5 +35,8 @@ describe Solver do
     it 'sould return a string "fizzbuzz"  if int is divisible by 5 and 3' do
       expect(@solver.fizzbuzz(15)).to eql('fizzbuzz')
     end
+    it 'sould return arg int itself if int does not satisfy any of above three conditions' do
+      expect(@solver.fizzbuzz(7)).to eql(7)
+    end
   end
 end
