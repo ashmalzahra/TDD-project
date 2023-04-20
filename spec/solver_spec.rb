@@ -16,4 +16,10 @@ describe Solver do
         expect(@solver.factorial(4)).to eq 24
       end
     end
+
+    describe '#reverse' do
+      it 'should return reverse of the given string' do
+        expect (@solver.reverse('Hello')).to eql('olleH')
+      end
+    end
   end
