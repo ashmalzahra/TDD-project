@@ -21,5 +21,6 @@ class Solver
 
   def fizzbuzz(int)
     return 'fizz' if (int % 3).zero?
+    return 'buzz' if (int % 5).zero?
   end
 end
