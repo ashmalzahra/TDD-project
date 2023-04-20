@@ -29,8 +29,11 @@ describe Solver do
     it 'sould take an integer argument int and return a string "fizz"  if int is divisible by 3' do
       expect(@solver.fizzbuzz(3)).to eql('fizz')
     end
-    it 'sould take an integer argument int and return a string "buzz"  if int is divisible by 5' do
+    it 'sould return a string "buzz"  if int is divisible by 5' do
       expect(@solver.fizzbuzz(5)).to eql('buzz')
+    end
+    it 'sould return a string "fizzbuzz"  if int is divisible by 5 and 3' do
+      expect(@solver.fizzbuzz(15)).to eql('fizzbuzz')
     end
   end
 end
