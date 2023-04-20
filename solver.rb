@@ -20,7 +20,8 @@ class Solver
   end
 
   def fizzbuzz(int)
-    return 'fizz' if (int % 3).zero?
-    return 'buzz' if (int % 5).zero?
+    return 'fizz' if (int % 3).zero? && !(int % 5).zero?
+    return 'buzz' if (int % 5).zero? && !(int % 3).zero?
+    return 'fizzbuzz' if (int % 15).zero?
   end
 end
